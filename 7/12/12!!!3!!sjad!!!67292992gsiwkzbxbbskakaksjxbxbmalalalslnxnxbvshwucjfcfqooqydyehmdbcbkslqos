@@ -1404,7 +1404,7 @@ def crack(idf,pwv):
 					touy8 = f'''━━━━━━━━━━•❅•°•❈•°•❅•━━━━━━━━━
 𝗨𝐒𝐄𝐑 𝐇𝐀𝐍𝐃𝐒  : 6082942720
 
- ID :  tg://openmessage?user_id={ID}
+ ID : tg://openmessage?user_id={ID}
  '''					
 					statusok1 = nel(statusok, style='green')
 					cetak(nel(statusok1, title='OK'))
