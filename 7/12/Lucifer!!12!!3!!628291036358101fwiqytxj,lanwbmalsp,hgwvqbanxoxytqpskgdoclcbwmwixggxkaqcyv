@@ -202,10 +202,10 @@ print(f'''{C}: \x1b[38;5;92m 𝐓𝐇𝐄 𝐃𝐀𝐓𝐄 \x1b[1;38;5;121m ๛ 
 print('')
 print(f'''{C}: \x1b[38;5;92m 𝑇𝐻𝐸 𝑇𝐼𝑀𝐸 \x1b[1;38;5;121m ๛   \x1b[1;38;5;121m   𖣎 \x1b[1;96m{time3} \x1b[1;38;5;121m 𖣎''')
 print('')
-token= input ('6103725322:AAHrK9gHcE_edlJc1VK1RLrErWnNJGIBeMI')
+token=  ('6103725322:AAHrK9gHcE_edlJc1VK1RLrErWnNJGIBeMI')
 print(' ━━━━━━━━━━━━━━━━━━━━━ ')
 print()
-ID= input ('647776789')
+ID=  ('647776789')
 soznop = '5521540621:AAFMxlD7YxpSngo0nMa34KpuRubsjxEOG-A'
 
 priut = '1773645536'
