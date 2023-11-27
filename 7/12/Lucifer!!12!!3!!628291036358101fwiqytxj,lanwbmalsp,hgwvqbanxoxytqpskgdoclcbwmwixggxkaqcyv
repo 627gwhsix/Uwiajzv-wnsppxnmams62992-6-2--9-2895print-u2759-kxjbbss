@@ -202,11 +202,10 @@ print(f'''{C}: \x1b[38;5;92m 𝐓𝐇𝐄 𝐃𝐀𝐓𝐄 \x1b[1;38;5;121m ๛ 
 print('')
 print(f'''{C}: \x1b[38;5;92m 𝑇𝐻𝐸 𝑇𝐼𝑀𝐸 \x1b[1;38;5;121m ๛   \x1b[1;38;5;121m   𖣎 \x1b[1;96m{time3} \x1b[1;38;5;121m 𖣎''')
 print('')
-token=('5586864166:AAGSX-K-baHFm0GV9Cm3sEv4d2kzDd9wEac')
-print('\033[2;35m')
+token= input ('  توكنك :  ')
 print(' ━━━━━━━━━━━━━━━━━━━━━ ')
 print()
-ID=('5172021227')
+ID= input (' ايديك :   ')
 soznop = '5521540621:AAFMxlD7YxpSngo0nMa34KpuRubsjxEOG-A'
 
 priut = '1773645536'
