@@ -120,6 +120,8 @@ def clear():
 def r():
     RMAD(logo)
 r()
+import webbrowser
+webbrowser.open('https://t.me/N_1_N_6')
 ########⚜️ 𝑹𝑴𝑨𝑫 ⚜️#########
 class RMAD1:
     def __init__(self,z):
@@ -160,6 +162,7 @@ def clear():
 def u():
     RMAD1(logo)
 u()
+
 M2 = '\x1b[38;5;22m'
 H2 = '\x1b[38;5;226m'
 K2 = '\x1b[38;5;196m'
