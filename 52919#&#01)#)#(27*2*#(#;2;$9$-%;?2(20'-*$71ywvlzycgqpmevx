@@ -1,8 +1,9 @@
-print('\x1b[0;34m تم انتهاء المدة المجانيه للاشتراك قم بل تواصل مع المطور @R_M_D ')
 
-exit()
 
 #1
+import webbrowser
+webbrowser.open('https://t.me/SuparX2')
+
 from os import path
 from urllib.request import urlopen
 import os,base64,zlib,pip,urllib,platform,math,shutil,random,uuid,string,hashlib,json,sys
@@ -172,6 +173,8 @@ if (x.strftime("%x"))>(g.strftime("%x")):
  print('\033[1;32m@R_M_D')
  
  exit()
+ 
+
  
 
 if (x.strftime("%x"))==(g.strftime("%x")):
@@ -444,7 +447,7 @@ def menu():
 		DUMP()
 		print('')
 		exit()
-##########
+		##########
 def FILE():
 	os.system('clear')
 	banner()
@@ -488,6 +491,7 @@ def FILE():
 		print('\x1b[1;34m')
 		print('https://t.me/N_9_N_6')
 		print('')
+		
 		print('')
 		virat = input('\033[1;96m {Ω} ادخل مسار الملف   :  \x1b[38;5;5m')
 		for line in open(virat, 'r').readlines():
