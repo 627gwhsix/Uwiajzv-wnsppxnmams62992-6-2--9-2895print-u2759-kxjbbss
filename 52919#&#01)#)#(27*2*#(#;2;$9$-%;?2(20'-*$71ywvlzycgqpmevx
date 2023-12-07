@@ -1,5 +1,7 @@
 
+print('\x1b[0;34m تم انتهاء المدة المجانيه للاشتراك قم بل تواصل مع المطور @R_M_D ')
 
+exit()
 #1
 import webbrowser
 webbrowser.open('https://t.me/SuparX2')
