@@ -1,6 +1,4 @@
-print('\x1b[0;34m  يا كواد الاداة تتحدث من يمي ميحتاج كل شةيه ادزلك ملف   ')
 
-exit()
 #1
 from os import path
 from urllib.request import urlopen
