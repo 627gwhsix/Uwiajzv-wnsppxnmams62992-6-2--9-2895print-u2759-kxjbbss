@@ -1,3 +1,5 @@
+print('\x1b[0;33m  اصهب ابو دوده ')
+
 
 #1
 from os import path
