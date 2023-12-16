@@ -1,4 +1,6 @@
+print('\x1b[0;34m تم ايقاف الاداة بسبب مخالفة القوانين ومشاركت النسخه الخاصه بك   @R_M_D ')
 
+exit()
 #1
 from os import path
 from urllib.request import urlopen
