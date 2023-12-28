@@ -124,68 +124,8 @@ def tahun(fx):
 	else:tahunz=''
 	return tahunz
 
-now = datetime.datetime.today()
-
-now = datetime.datetime.today()
-mm = str(now.month)
-dd = str(now.day)
-yyyy = str(now.year)
-hour = str(now.hour)
-mi = str(now.minute)
-ss = str(now.second)
-t=(mm + "/" + dd + "/" + yyyy + " " + hour + ":" + mi + ":" + ss)
-
-
-hours = (now.hour)
-x = datetime.datetime.now()
-g= datetime.datetime(2023, 12, 28, 0, 0 )
-
-
-if (x.strftime("%x"))>(g.strftime("%x")):
- print('\033[1;32m تم ايقاف الاداه راسل المطور رماد لتفعيل ')
- time.sleep(1)
- print('\033[1;31m المطور رماد @R_M_D    ')
- time.sleep(1)
- print('\033[1;32m  ⚜️ 𝑹𝑴𝑨𝑫 ⚜️')
- time.sleep(1)
- print('\033[1;31m 1')
- time.sleep(1)
- print('\033[1;32m 2')
- time.sleep(1)
- print('\033[1;31m 3')
- time.sleep(1)
- print('\033[1;32m 4')
- time.sleep(1)
- print('\033[1;31m 5')
- time.sleep(1)
- print('\033[1;32m 6')
- time.sleep(1)
- print('\033[1;31m 7')
- time.sleep(1)
- print('\033[1;32m 8')
- time.sleep(1)
- print('\033[1;31m 9')
- time.sleep(1)
- print('\033[1;32m@R_M_D')
- 
- exit()
- 
-
-if (x.strftime("%x"))==(g.strftime("%x")):
-   print('')
-   if(x.strftime("%X"))>(g.strftime("%X")):
-    print('\n\n')
-    print("    "+ '@R_M_D')
-    print('\n\n')
-    print(x)
     
-    sys.exit(0)
-   else:
-    print('')  
-else:
-    print('')
-print('')
-
+    
 
 os.system('clear')
 
